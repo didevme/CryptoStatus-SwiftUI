@@ -8,10 +8,10 @@ In this SwiftUI project, I developed a simple crypto tracking app using:
 - Kingfisher
 - Charts
 <div style="display: flex;">
-<img style="margin: 10px" src="sh1.png" width="240" />
-<img style="margin: 10px" src="sh2.png" width="240" />
-<img style="margin: 10px" src="sh3.png" width="240" />
-<img style="margin: 10px" src="sh4.png" width="240" />
+<img style="margin: 10px" src="sh1.png" width="220" />
+<img style="margin: 10px" src="sh2.png" width="220" />
+<img style="margin: 10px" src="sh3.png" width="220" />
+<img style="margin: 10px" src="sh4.png" width="220" />
 </div>
 
 <h3>Video</h3>
