@@ -7,11 +7,13 @@ In this SwiftUI project, I developed a simple crypto tracking app using:
 - Realm
 - Kingfisher
 - Charts
+
+<h3>Screenshots</h3>
 <div style="display: flex;">
-<img style="margin: 10px" src="sh1.png" width="220" />
-<img style="margin: 10px" src="sh2.png" width="220" />
-<img style="margin: 10px" src="sh3.png" width="220" />
-<img style="margin: 10px" src="sh4.png" width="220" />
+  <img style="margin: 2%" src="sh1.png" width="46%" />
+  <img style="margin: 2%" src="sh2.png" width="46%" />
+  <img style="margin: 2%" src="sh3.png" width="46%" />
+  <img style="margin: 2%" src="sh4.png" width="46%" />
 </div>
 
 <h3>Video</h3>
