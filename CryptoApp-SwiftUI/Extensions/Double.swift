@@ -14,7 +14,6 @@ extension Double {
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
         formatter.currencyCode = "EUR"
-//        formatter.locale = Locale(identifier: "de-DE")
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 2
         return formatter
@@ -25,7 +24,6 @@ extension Double {
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
         formatter.currencyCode = "EUR"
-//        formatter.locale = Locale(identifier: "de-DE")
         formatter.minimumFractionDigits = 0
         formatter.maximumFractionDigits = 0
         return formatter
