@@ -11,7 +11,6 @@ struct AllCoinsView: View {
     @StateObject var viewModel: HomeViewModel
     @State private var searchText = ""
     var body: some View {
-//        NavigationView {
         VStack(alignment: .leading) {
             Text("All Coins")
                 .font(.headline)
@@ -33,9 +32,6 @@ struct AllCoinsView: View {
             .padding(.horizontal)
             ScrollView {
                 VStack {
-                    //                    ForEach(viewModel.coins, id: \.id) { coin in
-                    //                        CoinCell(coin: coin)
-                    //                    }
                     ForEach(seachResults, id: \.id) { coin in
                         NavigationLink(destination: CoinView(coin: coin)) {
                             CoinCell(coin: coin)
@@ -45,9 +41,7 @@ struct AllCoinsView: View {
                     }
                 }.padding()
             }
-//        }
-    }
-//        .searchable(text: $searchText)
+        }
     }
     
     var seachResults: [Coin] {

@@ -14,9 +14,7 @@ struct CoinListItemView: View {
     var body: some View {
         HStack {
             Image(systemName: icon)
-//                .resizable()
                 .scaledToFit()
-//                .frame(width: 32, height: 32)
             Text(name)
                 .font(.caption)
                 .foregroundColor(.gray)

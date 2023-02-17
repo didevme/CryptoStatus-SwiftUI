@@ -10,8 +10,6 @@ import Alamofire
 
 struct HomeView: View {
     @StateObject var homeViewModel = HomeViewModel()
-    @StateObject var progress = UserProgress()
-    //    @ObservedObject var localData = LocalDataManager()
     
     var body: some View {
         NavigationStack {
@@ -37,18 +35,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-    }
-}
-
-class UserProgress: ObservableObject {
-    @Published var score = 1
-    init() {
-        print("test")
-        updateScore()
-    }
-    func updateScore() {
-        print("update")
-        self.score += 2
     }
 }
 

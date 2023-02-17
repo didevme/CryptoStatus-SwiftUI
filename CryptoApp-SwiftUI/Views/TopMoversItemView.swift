@@ -34,10 +34,6 @@ struct TopMoversItemView: View {
         .frame(width: 140, height: 140)
         .background(.ultraThinMaterial, in:
                         RoundedRectangle(cornerRadius: 12, style: .continuous))
-//        .overlay(
-//            RoundedRectangle(cornerRadius: 10)
-//                .stroke(Color(.systemGray4), lineWidth: 2)
-//        )
     }
 }
 

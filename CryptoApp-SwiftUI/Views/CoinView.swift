@@ -13,11 +13,9 @@ struct CoinView: View {
     var body: some View {
         ScrollView {
             VStack {
-               
                 HStack {
                     CoinCardItemView(name: "Current price", icon: "eurosign.circle", parameter: coin.currentPrice.toCurrency(), percent: coin.priceChangePercentage24H)
                     CoinCardItemView(name: "Market cap", icon: "chart.pie", parameter: coin.marketCap?.toCurrencyInt() ?? "0 EUR", percent: coin.marketCapChangePercentage24H ?? 0)
-//                    CoinCardItemView(name: "24h Price Change", icon: "clock", parameter: coin.priceChange24H.toCurrency())
                 }
                 ChartView(coin: coin.sparklineIn7D?.price ?? [], param: "Price over last 7 days")
                     .frame(height: 200)
@@ -37,11 +35,8 @@ struct CoinView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 40, height: 40)
-//                .clipShape(Circle())
                 .padding(.trailing, 20)
-                .offset(x: 0, y:  -50),
-            alignment: .topTrailing
-        )
+                .offset(x: 0, y:  -50), alignment: .topTrailing)
     }
 }
 

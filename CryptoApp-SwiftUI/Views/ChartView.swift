@@ -11,6 +11,7 @@ import SwiftUI
 struct ChartView: UIViewRepresentable {
     let coin: [Double]
     let param: String
+    
     func makeUIView(context: Context) -> Charts.LineChartView {
         return LineChartView()
     }
@@ -22,13 +23,10 @@ struct ChartView: UIViewRepresentable {
         chartViewStyle(of: uiView, with: "€")
     }
     
-    
-    
     func returnChartData(coin: [Double]) -> [ChartDataEntry] {
         let history = coin
         var values: [ChartDataEntry] = []
         var day: ChartDataEntry
-//        var index = 0.0
         var dateHours = 0.0
         for data in history {
             day = ChartDataEntry(x: dateHours, y: data)
@@ -71,8 +69,6 @@ struct ChartView: UIViewRepresentable {
         set1.mode = .cubicBezier
         set1.lineWidth = 3
         set1.drawFilledEnabled = true
-//        set1.fillColor = .orange
-//        set1.setColor(.orange)
         set1.fillColor = coin.first ?? 0.0 > coin.last ?? 0.0 ? .red : .green
         set1.setColor(coin.first ?? 0.0 > coin.last ?? 0.0 ? .red : .green)
         set1.setDrawHighlightIndicators(false)
